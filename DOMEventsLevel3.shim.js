@@ -1273,11 +1273,12 @@ if( !function( global ) {
 		_Object_defineProperty(thisObj, "__location", __Property_descriptor__);
 		return value;
 	};
-	_Object_defineProperty( _KeyboardEvent_prototype, "location", {
-		"enumerable": true,
-		"configurable": true,
-		"get": _getter_KeyboardEvent_location
-	} );
+	//Cyberjack: commented out because caused error on safari 8
+	// _Object_defineProperty( _KeyboardEvent_prototype, "location", {
+	// 	"enumerable": true,
+	// 	"configurable": true,
+	// 	"get": _getter_KeyboardEvent_location
+	// } );
 
 	function _keyDownHandler ( e ) {
 		var _keyCode = e.which || e.keyCode
